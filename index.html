@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Anchit - Student Developer, Python Programmer, and Aspiring Software Engineer. Learning algorithms, Git, Linux, and working on SIH 2026.">
+  <meta name="keywords" content="Anchit, Student Developer, Python, Competitive Programming, SIH 2026, Git, Linux, Portfolio">
+  <meta name="author" content="Anchit">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Anchit | Student Developer Portfolio">
+  <meta property="og:description" content="Student Developer passionate about Python, problem-solving, and practical technology-driven solutions.">
+  <meta property="og:type" content="website">
+
+  <title>Anchit | Student Developer & Python Programmer</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       ACCESSIBILITY: Skip to main content link
+       ======================================================== -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================
+       SECTION 2: NAVIGATION BAR
+       ======================================================== -->
+  <header class="header" id="navbar">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <!-- Brand Logo / Name -->
+      <a href="#home" class="nav-brand" aria-label="Anchit Portfolio Home">
+        <span class="logo-symbol">&lt;</span>
+        <span class="logo-name">ANCHIT</span>
+        <span class="logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#learning" class="nav-link">Learning</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-connect">Let's Connect</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Backdrop for Mobile Navigation -->
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- ========================================================
+         SECTION 3: HERO SECTION
+         ======================================================== -->
+    <section class="hero-section section-padding" id="home">
+      <div class="container hero-container">
+        
+        <!-- Left: Text Content -->
+        <div class="hero-content">
+          <!-- Availability / Learning Status Indicator -->
+          <div class="status-badge" role="status">
+            <span class="status-dot"></span>
+            <span class="status-text">Currently Learning &amp; Building</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Anchit</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-subtitle">
+            Student Developer <span class="divider">|</span> Python Programmer <span class="divider">|</span> Aspiring Software Engineer
+          </p>
+
+          <!-- Introduction -->
+          <p class="hero-intro">
+            I'm a student developer passionate about programming, problem-solving, and building technology-driven solutions to real-world problems. I'm continuously improving my skills through coding challenges, practical projects, and hands-on learning.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Quick Social Handles -->
+          <div class="hero-socials">
+            <span class="social-label">Find me on:</span>
+            <div class="social-links-inline">
+              <a href="https://github.com/anchit986" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com/in/anchitmahajan" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="mailto:anchitmahajan0987@gmail.com" class="social-icon-btn" aria-label="Email Anchit">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Developer Themed Interactive Visual (Terminal Card) -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-card">
+            <!-- Window Bar -->
+            <div class="code-card-header">
+              <div class="window-controls">
+                <span class="control-dot close"></span>
+                <span class="control-dot minimize"></span>
+                <span class="control-dot expand"></span>
+              </div>
+              <div class="card-filename">anchit_profile.py</div>
+              <div class="card-tag">Python 3.12</div>
+            </div>
+
+            <!-- Code Body -->
+            <div class="code-card-body">
+              <pre><code><span class="token-comment"># Developer Profile &amp; Focus</span>
+<span class="token-keyword">class</span> <span class="token-class">StudentDeveloper</span>:
+    <span class="token-keyword">def</span> <span class="token-function">__init__</span>(<span class="token-self">self</span>):
+        <span class="token-self">self</span>.name = <span class="token-string">"Anchit"</span>
+        <span class="token-self">self</span>.primary_language = <span class="token-string">"Python"</span>
+        <span class="token-self">self</span>.education = <span class="token-string">"BTech CSE (2030)"</span>
+        <span class="token-self">self</span>.active_project = <span class="token-string">"SIH 2026 - PS 26034"</span>
+        <span class="token-self">self</span>.core_skills = [
+            <span class="token-string">"Algorithms &amp; Logic"</span>,
+            <span class="token-string">"Git &amp; GitHub"</span>,
+            <span class="token-string">"Linux Shell"</span>,
+            <span class="token-string">"OCR &amp; Computer Vision"</span>
+        ]
+
+    <span class="token-keyword">def</span> <span class="token-function">current_objective</span>(<span class="token-self">self</span>):
+        <span class="token-keyword">return</span> <span class="token-string">"Learn by doing &amp; build practical solutions"</span>
+
+dev = StudentDeveloper()
+<span class="token-builtin">print</span>(f<span class="token-string">"Status: {dev.current_objective()}"</span>)
+<span class="token-output">&gt;&gt;&gt; Status: Learn by doing &amp; build practical solutions</span><span class="cursor-blink">|</span></code></pre>
+            </div>
+
+            <!-- Terminal Footer Status -->
+            <div class="code-card-footer">
+              <div class="footer-item">
+                <span class="branch-icon">&#9679;</span> main
+              </div>
+              <div class="footer-item">UTF-8</div>
+              <div class="footer-item">Ready</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 4: ABOUT ME SECTION
+         ======================================================== -->
+    <section class="section-padding about-section" id="about">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">Background</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Block -->
+          <div class="about-narrative-card">
+            <h3 class="about-lead">Passionate about logic, software engineering, and continuous growth.</h3>
+            
+            <p class="about-text">
+              I'm an aspiring software developer who enjoys learning programming concepts and applying them to practical problems.
+            </p>
+            
+            <p class="about-text">
+              My current focus areas include learning Python, strengthening problem-solving and algorithmic thinking through competitive programming, understanding version control with Git and GitHub, and developing Linux command-line skills.
+            </p>
+            
+            <p class="about-text">
+              I'm also exploring innovative software solutions through the Smart India Hackathon (SIH) 2026 and learning about open-source opportunities such as Google Summer of Code (GSoC).
+            </p>
+
+            <blockquote class="about-quote">
+              <span class="quote-mark">“</span>
+              <p>I believe in learning by doing, understanding the logic behind solutions, and improving through consistent practice.</p>
+            </blockquote>
+          </div>
+
+          <!-- Supporting Information Cards -->
+          <div class="about-cards-grid">
+            
+            <!-- Focus Card 1 -->
+            <div class="info-card">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+              </div>
+              <h4 class="info-card-title">Continuous Learning</h4>
+              <p class="info-card-desc">
+                Focusing on strong foundational programming concepts in Python and practicing algorithmic thinking step-by-step.
+              </p>
+            </div>
+
+            <!-- Focus Card 2 -->
+            <div class="info-card">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h4 class="info-card-title">Real-World Problems</h4>
+              <p class="info-card-desc">
+                Designing solutions for national-level challenges like SIH 2026, targeting automated regulatory and commodity compliance.
+              </p>
+            </div>
+
+            <!-- Focus Card 3 -->
+            <div class="info-card">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h4 class="info-card-title">Developer Tooling</h4>
+              <p class="info-card-desc">
+                Embracing standard developer tools early on, including Git branch workflows, GitHub collaboration, and Linux terminal utilities.
+              </p>
+            </div>
+
+            <!-- Focus Card 4 -->
+            <div class="info-card">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h4 class="info-card-title">Open Source Interest</h4>
+              <p class="info-card-desc">
+                Exploring global open-source ecosystems, community collaboration, and preparing for programs like Google Summer of Code (GSoC).
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 5: TECHNICAL SKILLS SECTION
+         ======================================================== -->
+    <section class="section-padding skills-section" id="skills">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">Capabilities</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">
+            Active areas of learning and development — focused on building strong conceptual foundations and hands-on competence without artificial percentages.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon programming-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Programming</h3>
+                <span class="skill-cat-badge">Core Foundation</span>
+              </div>
+            </div>
+
+            <p class="skill-cat-desc">
+              Practicing structured programming, logical operations, and algorithmic decomposition in Python.
+            </p>
+
+            <ul class="skills-list">
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-tag">Primary Language</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">Conditional Statements &amp; Loops</span>
+                  <span class="skill-tag">Control Flow</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">Strings &amp; Lists</span>
+                  <span class="skill-tag">Data Structures</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">Functions</span>
+                  <span class="skill-tag">Modular Code</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">Basic Algorithmic Problem-Solving</span>
+                  <span class="skill-tag">Logic Building</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Developer Tools -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon tools-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Developer Tools</h3>
+                <span class="skill-cat-badge">Workflow &amp; System</span>
+              </div>
+            </div>
+
+            <p class="skill-cat-desc">
+              Essential version control and command line utilities for reliable, reproducible software workflows.
+            </p>
+
+            <ul class="skills-list">
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-tag">Version Control</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">GitHub</span>
+                  <span class="skill-tag">Collaboration &amp; Remotes</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">Linux Command Line</span>
+                  <span class="skill-tag">Shell &amp; Environment</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Technologies Explored -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon vision-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Technologies Explored</h3>
+                <span class="skill-cat-badge">Applied Tech</span>
+              </div>
+            </div>
+
+            <p class="skill-cat-desc">
+              Domain technologies investigated and applied for automated visual inspection and document verification.
+            </p>
+
+            <ul class="skills-list">
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">Optical Character Recognition (OCR)</span>
+                  <span class="skill-tag">Text Extraction</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">Image Processing</span>
+                  <span class="skill-tag">Pre-processing</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">Rule-Based Validation</span>
+                  <span class="skill-tag">Compliance Logic</span>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-bullet"></span>
+                <div class="skill-info">
+                  <span class="skill-name">Computer Vision Concepts</span>
+                  <span class="skill-tag">Label Detection</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 6: FEATURED PROJECT SECTION
+         ======================================================== -->
+    <section class="section-padding project-section" id="projects">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">Hackathon &amp; Innovation</span>
+          <h2 class="section-title">Featured Project</h2>
+          <p class="section-subtitle">
+            An innovative solution proposed for the Smart India Hackathon (SIH) 2026 addressing consumer protection and automated regulatory compliance.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Large Featured Project Card -->
+        <div class="featured-project-card">
+          
+          <!-- Top Bar / Meta Info -->
+          <div class="project-card-header">
+            <div class="project-meta-badges">
+              <span class="badge badge-program">SIH 2026</span>
+              <span class="badge badge-id">PS ID: 26034</span>
+              <span class="badge badge-category">Compliance Automation</span>
+            </div>
+
+            <!-- Configurable Project Status Badge -->
+            <div class="project-status" title="Project development phase">
+              <span class="status-indicator-dot"></span>
+              <span class="status-indicator-text">Proposed Project / Planning</span>
+            </div>
+          </div>
+
+          <!-- Project Title & Subtitle -->
+          <h3 class="project-title">
+            Automated Packaged Commodity Compliance Checker
+          </h3>
+
+          <div class="project-body-grid">
+            
+            <!-- Left Column: Problem & Proposed Solution -->
+            <div class="project-text-column">
+              
+              <!-- Problem Block -->
+              <div class="project-block">
+                <h4 class="block-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  Problem Context
+                </h4>
+                <p class="block-desc">
+                  Manual verification of packaged commodity labels is time-consuming and resource-intensive. Products sold in retail stores, supermarkets, and e-commerce platforms must comply with mandatory declaration requirements under the <strong>Legal Metrology Act, 2009</strong>, and the <strong>Legal Metrology (Packaged Commodities) Rules, 2011</strong>.
+                </p>
+              </div>
+
+              <!-- Proposed Solution Block -->
+              <div class="project-block">
+                <h4 class="block-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  Proposed Solution
+                </h4>
+                <p class="block-desc">
+                  An automated system that analyzes product packaging images and online product listings to identify potentially missing or incorrect mandatory declarations.
+                </p>
+              </div>
+
+              <!-- Expected Impact Block -->
+              <div class="project-block">
+                <h4 class="block-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  Expected Impact
+                </h4>
+                <p class="block-desc">
+                  The proposed solution aims to reduce manual inspection effort, improve consistency in compliance checks, and support consumer protection and fair trade practices.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Key Features & Technical Workflow -->
+            <div class="project-details-column">
+              
+              <!-- Key Features List -->
+              <div class="features-wrapper">
+                <h4 class="block-title">Key Capabilities &amp; Features</h4>
+                <ul class="features-list">
+                  <li class="feature-item">
+                    <svg class="feature-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Extract text from product labels using OCR.</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg class="feature-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Identify manufacturer or packer details.</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg class="feature-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Check net quantity and maximum retail price (MRP).</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg class="feature-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Extract manufacturing, packing, or import date information.</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg class="feature-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Identify consumer care details and other required declarations.</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg class="feature-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Validate extracted information against configurable compliance rules.</span>
+                  </li>
+                  <li class="feature-item">
+                    <svg class="feature-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Flag potential violations and generate understandable compliance reports.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Technical Workflow Architecture Flowchart -->
+              <div class="workflow-wrapper">
+                <h4 class="block-title">Technical Workflow</h4>
+                <div class="workflow-pipeline" aria-label="End to End Technical Pipeline">
+                  <div class="workflow-node">
+                    <span class="node-number">01</span>
+                    <span class="node-label">Image Upload</span>
+                  </div>
+                  <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+                  <div class="workflow-node">
+                    <span class="node-number">02</span>
+                    <span class="node-label">Image Processing</span>
+                  </div>
+                  <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+                  <div class="workflow-node">
+                    <span class="node-number">03</span>
+                    <span class="node-label">OCR</span>
+                  </div>
+                  <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+                  <div class="workflow-node">
+                    <span class="node-number">04</span>
+                    <span class="node-label">Info Extraction</span>
+                  </div>
+                  <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+                  <div class="workflow-node">
+                    <span class="node-number">05</span>
+                    <span class="node-label">Rule Engine</span>
+                  </div>
+                  <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+                  <div class="workflow-node">
+                    <span class="node-number">06</span>
+                    <span class="node-label">Compliance Evaluation</span>
+                  </div>
+                  <span class="workflow-arrow" aria-hidden="true">&rarr;</span>
+                  <div class="workflow-node">
+                    <span class="node-number">07</span>
+                    <span class="node-label">Report Generation</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Project Actions & Disclaimer -->
+          <div class="project-card-footer">
+            <div class="project-actions">
+              <!-- View Details Modal Trigger -->
+              <button class="btn btn-primary" id="openProjectModal" aria-haspopup="dialog" aria-controls="projectModal">
+                <span>View Full Details</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+              </button>
+
+              <!-- GitHub Repo Link / Placeholder -->
+              <!-- Note: Shown with placeholder indicator until public repository link is added -->
+              <a href="https://github.com/anchit986" target="_blank" rel="noopener noreferrer" class="btn btn-secondary repo-link-btn" title="GitHub Repository link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Repository</span>
+                <span class="placeholder-tag">Repo Pending Push</span>
+              </a>
+            </div>
+
+            <!-- Mandatory honesty disclosure notice -->
+            <p class="project-disclaimer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <span>This is an active proposed hackathon project for SIH 2026. Features and workflow reflect current technical design specifications.</span>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 7: LEARNING & PRACTICE SECTION
+         ======================================================== -->
+    <section class="section-padding learning-section" id="learning">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">Work in Progress</span>
+          <h2 class="section-title">What I'm Working On</h2>
+          <p class="section-subtitle">
+            Ongoing learning activities and skill development through daily practice, not claims of professional work experience.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="learning-grid">
+          
+          <!-- Card 1: Python & Competitive Programming -->
+          <div class="learning-card">
+            <div class="learning-card-header">
+              <div class="learning-icon python-theme" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+                </svg>
+              </div>
+              <span class="learning-status-pill">Active Daily</span>
+            </div>
+
+            <h3 class="learning-title">Python &amp; Competitive Programming</h3>
+            <p class="learning-desc">
+              I'm practicing Python programming through Codeforces-style problems to improve my logical thinking, understand algorithms, and become more confident at solving programming challenges.
+            </p>
+
+            <div class="learning-concepts">
+              <h4 class="concepts-heading">Concepts Practiced:</h4>
+              <ul class="concepts-list">
+                <li>Time and space complexity awareness</li>
+                <li>List manipulations and string algorithms</li>
+                <li>Conditional flow &amp; nested loop optimizations</li>
+                <li>Math and modular arithmetic problems</li>
+                <li>Edge case identification and logic testing</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 2: Git & GitHub -->
+          <div class="learning-card">
+            <div class="learning-card-header">
+              <div class="learning-icon git-theme" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path d="M18 15V9a3 3 0 0 0-3-3H9"></path>
+                  <line x1="6" y1="9" x2="6" y2="15"></line>
+                </svg>
+              </div>
+              <span class="learning-status-pill">Essential Workflow</span>
+            </div>
+
+            <h3 class="learning-title">Git &amp; GitHub</h3>
+            <p class="learning-desc">
+              I'm learning version control, repositories, commits, branches, remote repositories, pushing changes, and pull requests.
+            </p>
+
+            <div class="learning-concepts">
+              <h4 class="concepts-heading">Concepts Practiced:</h4>
+              <ul class="concepts-list">
+                <li>Repository initialization and file staging</li>
+                <li>Writing clear, structured commit messages</li>
+                <li>Branching strategies for feature isolation</li>
+                <li>Remote repository syncing (push, fetch, pull)</li>
+                <li>Opening pull requests and resolving simple merge conflicts</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 3: Linux Command Line -->
+          <div class="learning-card">
+            <div class="learning-card-header">
+              <div class="learning-icon linux-theme" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <span class="learning-status-pill">Systems Skill</span>
+            </div>
+
+            <h3 class="learning-title">Linux Command Line</h3>
+            <p class="learning-desc">
+              I'm practicing directory and file operations, permissions, ownership, shell scripts, and process management.
+            </p>
+
+            <div class="learning-concepts">
+              <h4 class="concepts-heading">Concepts Practiced:</h4>
+              <ul class="concepts-list">
+                <li>Filesystem navigation (<code class="code-inline">cd</code>, <code class="code-inline">ls</code>, <code class="code-inline">find</code>)</li>
+                <li>File manipulation &amp; I/O redirection (<code class="code-inline">cat</code>, <code class="code-inline">&gt;</code>, <code class="code-inline">|</code>)</li>
+                <li>File permissions &amp; user ownership (<code class="code-inline">chmod</code>, <code class="code-inline">chown</code>)</li>
+                <li>Basic Bash shell scripts for routine tasks</li>
+                <li>Process monitoring (<code class="code-inline">ps</code>, <code class="code-inline">top</code>, <code class="code-inline">kill</code>)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 8: EDUCATION SECTION
+         ======================================================== -->
+    <section class="section-padding education-section" id="education">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">
+            Current undergraduate degree and academic learning focus.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Editable Education Card Container -->
+        <div class="education-card-wrapper">
+          <div class="education-card">
+            <div class="edu-card-top">
+              <div class="edu-icon-badge" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+
+              <div class="edu-primary-details">
+                <div class="edu-degree-row">
+                  <!-- Degree or course placeholder -->
+                  <h3 class="edu-degree">BTech in Computer Science &amp; Engineering</h3>
+                  <!-- Graduation year placeholder -->
+                  <span class="edu-year-badge">2030 (Expected)</span>
+                </div>
+                
+                <!-- College or university placeholder -->
+                <p class="edu-institution">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Rishihood University</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="edu-card-body">
+              <h4 class="edu-focus-title">Relevant Learning Areas &amp; Coursework:</h4>
+              <div class="edu-tags">
+                <span class="edu-tag">Python Programming</span>
+                <span class="edu-tag">Problem-Solving &amp; Algorithms</span>
+                <span class="edu-tag">Git &amp; GitHub</span>
+                <span class="edu-tag">Linux Fundamentals</span>
+                <span class="edu-tag">Computer Science Foundations</span>
+              </div>
+            </div>
+
+            <!-- Notice for future customization -->
+            <div class="edu-card-footer">
+              <span class="edu-placeholder-hint">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+                Editable details: Degree [BTECH CSE] | Institution [RISHIHOOD UNIVERSITY] | Graduation [2030]
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 9: INTERESTS & GOALS SECTION
+         ======================================================== -->
+    <section class="section-padding interests-section" id="interests">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">Aspirations</span>
+          <h2 class="section-title">Beyond Coding</h2>
+          <p class="section-subtitle">
+            Curiosities, collaborative interests, and professional roadmap.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="interests-grid">
+          
+          <!-- Interests Badges / Cards -->
+          <div class="interest-items-wrapper">
+            <h3 class="interests-group-title">Current Focus &amp; Interests</h3>
+            
+            <div class="interest-badges-grid">
+              
+              <div class="interest-chip">
+                <span class="chip-icon">&#9879;</span>
+                <span class="chip-text">Competitive Programming</span>
+              </div>
+
+              <div class="interest-chip">
+                <span class="chip-icon">&#9881;</span>
+                <span class="chip-text">Building Practical Software Projects</span>
+              </div>
+
+              <div class="interest-chip">
+                <span class="chip-icon">&#127760;</span>
+                <span class="chip-text">Open-Source Development</span>
+              </div>
+
+              <div class="interest-chip">
+                <span class="chip-icon">&#9733;</span>
+                <span class="chip-text">Exploring Google Summer of Code (GSoC)</span>
+              </div>
+
+              <div class="interest-chip">
+                <span class="chip-icon">&#128736;</span>
+                <span class="chip-text">Learning New Developer Tools &amp; Technologies</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Goal Statement Card -->
+          <div class="goal-card">
+            <div class="goal-card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 6 12 12 16 14"></polygon>
+              </svg>
+            </div>
+            <h3 class="goal-title">My Primary Goal</h3>
+            <p class="goal-statement">
+              "My goal is to become a capable software developer by building meaningful projects, strengthening my fundamentals, and contributing to collaborative development."
+            </p>
+            <div class="goal-roadmap-tags">
+              <span>#FundamentalsFirst</span>
+              <span>#HandsOnBuilding</span>
+              <span>#OpenSourceReady</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 10: CONTACT SECTION
+         ======================================================== -->
+    <section class="section-padding contact-section" id="contact">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">
+            I'm interested in connecting with fellow developers, learning from the open-source community, and collaborating on meaningful software projects.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Channels Info Column -->
+          <div class="contact-info-column">
+            <h3 class="contact-heading">Reach Out Directly</h3>
+            <p class="contact-lead">
+              Feel free to connect for hackathon collaborations, discussions on Python and algorithms, or developer community networking.
+            </p>
+
+            <div class="contact-cards-stack">
+              
+              <!-- Email Card -->
+              <div class="contact-channel-card">
+                <div class="channel-icon email-theme" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">Email Address</span>
+                  <a href="mailto:anchitmahajan0987@gmail.com" class="channel-link">anchitmahajan0987@gmail.com</a>
+                </div>
+                <button class="btn-copy" id="copyEmailBtn" data-copy="anchitmahajan0987@gmail.com" title="Copy email address" aria-label="Copy email address to clipboard">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-text">Copy</span>
+                </button>
+              </div>
+
+              <!-- GitHub Card -->
+              <div class="contact-channel-card">
+                <div class="channel-icon github-theme" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">GitHub Profile</span>
+                  <a href="https://github.com/anchit986" target="_blank" rel="noopener noreferrer" class="channel-link">
+                    github.com/anchit986
+                    <span class="external-indicator">&nearr;</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <div class="contact-channel-card">
+                <div class="channel-icon linkedin-theme" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-type">LinkedIn Profile</span>
+                  <a href="https://linkedin.com/in/anchitmahajan" target="_blank" rel="noopener noreferrer" class="channel-link">
+                    linkedin.com/in/anchitmahajan
+                    <span class="external-indicator">&nearr;</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-column">
+            <div class="contact-form-wrapper">
+              <h3 class="form-title">Send a Message</h3>
+              <p class="form-subtitle">Fill in the fields below to start a conversation.</p>
+
+              <!-- Form with client side validation and demo disclaimer -->
+              <form id="contactForm" novalidate>
+                
+                <div class="form-group">
+                  <label for="userName" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="userName" name="name" class="form-control" placeholder="e.g. Jane Doe" required>
+                  <span class="form-error" id="nameError">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="userEmail" class="form-label">Your Email <span class="required">*</span></label>
+                  <input type="email" id="userEmail" name="email" class="form-control" placeholder="e.g. jane@example.com" required>
+                  <span class="form-error" id="emailError">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="userSubject" class="form-label">Subject <span class="required">*</span></label>
+                  <input type="text" id="userSubject" name="subject" class="form-control" placeholder="e.g. Hackathon / Project Discussion" required>
+                  <span class="form-error" id="subjectError">Please enter a subject.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="userMessage" class="form-label">Message <span class="required">*</span></label>
+                  <textarea id="userMessage" name="message" rows="4" class="form-control" placeholder="Write your message here..." required></textarea>
+                  <span class="form-error" id="messageError">Please enter your message (at least 10 characters).</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                  <span>Send Message</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+
+                <!-- Honest Form Status Disclaimer -->
+                <div class="form-demo-notice">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  <span><strong>Frontend Demo Notice:</strong> Submitting will validate your input and offer to open your default mail client with pre-filled content.</span>
+                </div>
+
+                <!-- Submission feedback container -->
+                <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       SECTION 11: FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+          <a href="#home" class="nav-brand" aria-label="Anchit Home">
+            <span class="logo-symbol">&lt;</span>
+            <span class="logo-name">ANCHIT</span>
+            <span class="logo-symbol">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            Student Developer &amp; Problem Solver.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#learning">Learning</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-social-group">
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-social-links">
+            <a href="https://github.com/anchit986" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/anchitmahajan" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:anchitmahajan0987@gmail.com" class="footer-social-link" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-quote">"Built with curiosity and a passion for learning."</p>
+        <p class="footer-copyright">
+          &copy; <span id="currentYear">2026</span> Anchit. All rights reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       MODAL: SIH 2026 FEATURED PROJECT DETAILS
+       ======================================================== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-box">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-program">SIH 2026 Detailed Brief</span>
+          <h3 class="modal-title" id="modalTitle">Automated Packaged Commodity Compliance Checker</h3>
+          <span class="modal-meta">Problem Statement ID: 26034 | Category: Compliance Automation</span>
+        </div>
+        <button class="modal-close" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        
+        <div class="modal-section">
+          <h4 class="modal-sec-title">Regulatory Background</h4>
+          <p class="modal-text">
+            Under the <strong>Legal Metrology Act, 2009</strong> and the <strong>Legal Metrology (Packaged Commodities) Rules, 2011</strong>, every pre-packaged commodity sold across physical retail and e-commerce portals must carry mandatory declarations. These include the genuine manufacturer/packer identity, net quantity (verified with correct units of measurement), Maximum Retail Price (inclusive of all taxes), dates of manufacture/pack, and consumer grievance contact details.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-sec-title">The Challenge</h4>
+          <p class="modal-text">
+            Regulatory authorities and online platforms currently face manual inspection bottlenecks. With millions of SKUs and variable label orientations, manual checks result in delayed reviews and inconsistencies in consumer rights protection.
+          </p>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-sec-title">Step-by-Step Technical Architecture</h4>
+          <div class="modal-pipeline-list">
+            <div class="pipeline-step">
+              <span class="step-num">Step 1</span>
+              <div>
+                <strong>Image Acquisition &amp; Normalization:</strong> Input label photos or e-commerce listing images are pre-processed (deskewing, contrast enhancement, denoising).
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <span class="step-num">Step 2</span>
+              <div>
+                <strong>Optical Character Recognition (OCR):</strong> Segmented packaging regions are scanned to convert text pixels into searchable Unicode strings.
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <span class="step-num">Step 3</span>
+              <div>
+                <strong>Entity &amp; Field Extraction:</strong> Heuristic and regular expression parsers isolate MRP, Net Weight/Volume, Batch numbers, and Customer Care emails/phone numbers.
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <span class="step-num">Step 4</span>
+              <div>
+                <strong>Configurable Rule Engine:</strong> Extracted fields are evaluated against Legal Metrology Rules (e.g. font size thresholds, mandatory units, non-deceptive representation).
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <span class="step-num">Step 5</span>
+              <div>
+                <strong>Automated Audit Report:</strong> The system flags missing or non-compliant fields with confidence highlights and generates an exportable inspection report.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-sec-title">Planned Implementation Stack</h4>
+          <div class="modal-tags">
+            <span class="m-tag">Python</span>
+            <span class="m-tag">Tesseract OCR / EasyOCR</span>
+            <span class="m-tag">OpenCV (Image Preprocessing)</span>
+            <span class="m-tag">Regular Expressions &amp; Parsers</span>
+            <span class="m-tag">JSON / PDF Report Exporter</span>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-sec-title">Current Milestone</h4>
+          <div class="modal-notice">
+            <strong>Project Status: Proposed &amp; Architectural Planning.</strong><br>
+            Submitted under Smart India Hackathon 2026. Code prototypes and experimental modules will be progressively published to GitHub as validation advances.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modalCloseAction">Close</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top of page" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+
